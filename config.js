@@ -2,7 +2,7 @@ const config = {
   ip: 'localhost',
   port: 8111,
   explorers: {
-    SAFE: 'http://safe.safecoinchainz.info',
+    SAFE: 'http://explorer.safecoin.org',
     MSHARK: 'http://MSHARK.explorer.supernet.org',
     REVS: 'http://revs.explorer.supernet.org',
     SUPERNET: 'http://SUPERNET.explorer.supernet.org',
@@ -22,15 +22,16 @@ const config = {
     BTCH: 'http://www.btch.host',
   },
   safecoinParams: { // networking
-    messagePrefix: '\x19Safecoin Signed Message:\n',
-    bip32: {
-      public: 0x0488b21e,
-      private: 0x0488ade4,
-    },
-    pubKeyHash: 0x3c,
-    scriptHash: 0x55,
-    wif: 0xbc,
-  },
+  messagePrefix: '\x19Safecoin Signed Message:\n',
+      bip32: {
+          public: 0x0488b21e,
+          private: 0x0488ade4,
+      },
+      pubKeyHash: 0x3d,
+      scriptHash: 0x56,
+      wif: 0xbd,
+  };
+
   electrumServers: {
     coqui: {
       serverList: [
@@ -123,8 +124,8 @@ const config = {
     },
     safe: {
       serverList: [
-        'electrum1.cipig.net:10001',
-        'electrum2.cipig.net:10001',
+        'electrum1.ipv6admin.com:10001',
+        'electrum2.ipv6admin.com:10001',
       ],
     },
     chips: {
